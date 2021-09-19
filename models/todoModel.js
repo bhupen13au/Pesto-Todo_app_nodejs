@@ -1,6 +1,10 @@
 const mongoose = require('mongoose')
 
 const todoSchema = new mongoose.Schema({
+  email: {
+    type: String,
+    required: true
+  },
   item: {
     type: String,
     required: true

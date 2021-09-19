@@ -16,6 +16,9 @@ app.use(express.json())
 const todoRouter = require('./routers/todo')
 app.use('/todo', todoRouter)
 
+const userRouter = require('./routers/userApp')
+app.use('/user', userRouter)
+
 app.listen(8000, () => {
   console.log('server started')
 })
